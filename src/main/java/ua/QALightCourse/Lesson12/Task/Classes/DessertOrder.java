@@ -14,9 +14,9 @@ public class DessertOrder extends Order {
     @Override
     public double getPrice() {
         return switch (dessertName) {
-            case dessertName.PANCAKES -> 25.0;
-            case dessertName.CAKE -> 50.0;
-            case dessertName.CANDIES -> 36.0;
+            case PANCAKES -> 25.0;
+            case CAKE -> 50.0;
+            case CANDIES -> 36.0;
             default -> throw new IllegalArgumentException(dessertName + " isn`t exist!");
         };
     }

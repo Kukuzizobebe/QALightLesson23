@@ -14,9 +14,9 @@ public class TeaOrder extends Order {
     @Override
     public double getPrice() {
         return switch (type) {
-            case type.BLACK -> 15.0;
-            case type.GREEN -> 20.0;
-            case type.HERBAL-> 21.0;
+            case BLACK -> 15.0;
+            case GREEN -> 20.0;
+            case HERBAL-> 21.0;
             default -> throw new IllegalArgumentException(type + " isn`t exist!");
         };
     }

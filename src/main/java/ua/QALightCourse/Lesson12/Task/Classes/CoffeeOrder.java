@@ -14,9 +14,9 @@ public class CoffeeOrder extends Order {
     @Override
     public double getPrice() {
         return switch (size) {
-            case size.SMALL -> 20.0;
-            case size.MEDIUM -> 35.0;
-            case size.LARGE -> 50.0;
+            case SMALL -> 20.0;
+            case MEDIUM -> 35.0;
+            case LARGE -> 50.0;
             default -> throw new IllegalArgumentException(size + " isn`t exist!");
         };
     }
