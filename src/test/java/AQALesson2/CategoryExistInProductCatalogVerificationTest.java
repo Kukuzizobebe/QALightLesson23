@@ -12,7 +12,7 @@ import static java.lang.String.format;
 
 public class CategoryExistInProductCatalogVerificationTest {
 
-    static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException {
 
         String category = "LEGO";
         WebDriver driver = new ChromeDriver();

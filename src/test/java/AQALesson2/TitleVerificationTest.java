@@ -10,7 +10,7 @@ import static java.lang.String.format;
 
 public class TitleVerificationTest {
 
-    static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException {
         String searchWord = "Ipad";
         WebDriver driver = new ChromeDriver();
 
