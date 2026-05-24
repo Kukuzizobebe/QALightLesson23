@@ -5,6 +5,4 @@ reports
 *.iml
 /build
 /out
-target/
-*.class
-.idea/
+/target
