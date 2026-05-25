@@ -1,9 +1,13 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
 <suite name="Suite">
     <test name="Test">
-        <packages>
-            <package name="AQALesson5.NegativeTests"/>
-            <package name="AQALesson5.PositiveTests"/>
-        </packages>
+        <classes>
+            <class name="ua.QALightCourse.AQALesson7.downloadapplicationtest.DownloadApplicationPositiveTest"/>
+            <class name="ua.QALightCourse.AQALesson7.questionsanswerstest.QuestionAnswersNegativeTest"/>
+            <class name="ua.QALightCourse.AQALesson7.questionsanswerstest.QuestionAnswersPositiveTest"/>
+            <class name="ua.QALightCourse.AQALesson7.servicessearchtest.ServiceSearchPositiveTest"/>
+        </classes>
     </test>
+
 </suite>

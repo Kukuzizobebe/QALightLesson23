@@ -1,6 +1,6 @@
 package ua.QALightCourse.AQALesson3;
 
-import junit.framework.Assert;
+import org.testng.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -34,7 +34,7 @@ public class CheckTitleForAppleStoreVerificationTest {
 
             WebElement titleOnAppleStore = driver.findElement(By.xpath("//h1//span[contains(@class,'multiline-clamp__text')]"));
             String errorMessage = String.format("This title is not equals to title: %s", correctTitleForAppleStore);
-            Assert.assertTrue(errorMessage, Objects.equals(titleOnAppleStore.getText(), correctTitleForAppleStore));
+            Assert.assertTrue(Objects.equals(titleOnAppleStore.getText(), correctTitleForAppleStore), errorMessage);
         } finally {
             driver.quit();
         }

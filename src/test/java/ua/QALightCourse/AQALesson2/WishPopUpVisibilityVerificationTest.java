@@ -1,6 +1,6 @@
 package ua.QALightCourse.AQALesson2;
 
-import junit.framework.Assert;
+import org.testng.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -22,7 +22,7 @@ public class WishPopUpVisibilityVerificationTest {
 
             WebElement wishListPopUp = driver.findElement(By.xpath("//div[contains(@class,'my-lists__section')]"));
 
-            Assert.assertTrue("Wish list popup isn`t displayed", wishListPopUp.isDisplayed());
+            Assert.assertTrue(wishListPopUp.isDisplayed(), "Wish list popup isn`t displayed");
         } finally {
             driver.quit();
         }

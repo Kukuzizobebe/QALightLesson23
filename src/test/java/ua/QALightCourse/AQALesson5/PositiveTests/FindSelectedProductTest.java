@@ -1,7 +1,7 @@
 package ua.QALightCourse.AQALesson5.PositiveTests;
 
 import ua.QALightCourse.AQALesson5.BaseTest.BaseTest;
-import junit.framework.Assert;
+import org.testng.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
