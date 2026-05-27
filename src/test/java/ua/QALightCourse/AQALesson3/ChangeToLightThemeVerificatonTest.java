@@ -1,6 +1,6 @@
 package ua.QALightCourse.AQALesson3;
 
-import junit.framework.Assert;
+import org.testng.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -28,7 +28,7 @@ public class ChangeToLightThemeVerificatonTest {
             Thread.sleep(2000);
 
             String errorMessage = "This theme isn`t light theme!";
-            Assert.assertTrue(errorMessage, !Objects.equals(classAfter, classBefore));
+            Assert.assertTrue(!Objects.equals(classAfter, classBefore), errorMessage);
         } finally {
             driver.quit();
         }

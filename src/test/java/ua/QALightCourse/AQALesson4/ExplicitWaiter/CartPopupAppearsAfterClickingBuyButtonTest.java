@@ -1,6 +1,6 @@
 package ua.QALightCourse.AQALesson4.ExplicitWaiter;
 
-import junit.framework.Assert;
+import org.testng.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;

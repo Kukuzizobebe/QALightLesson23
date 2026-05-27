@@ -1,6 +1,6 @@
 package ua.QALightCourse.AQALesson3;
 
-import junit.framework.Assert;
+import org.testng.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -31,7 +31,7 @@ public class ChangeLanguageToRUVerificationTest {
 
             WebElement buttonCurrentLanguage = driver.findElement(By.xpath("//div[contains(@class,'lang-button')]"));
 
-            Assert.assertTrue(errorMessage,buttonCurrentLanguage.getText().equals(language));
+            Assert.assertTrue(buttonCurrentLanguage.getText().equals(language), errorMessage);
         } finally {
             driver.quit();
         }

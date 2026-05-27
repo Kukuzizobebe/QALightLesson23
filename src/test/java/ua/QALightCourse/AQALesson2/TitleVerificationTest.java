@@ -1,6 +1,6 @@
 package ua.QALightCourse.AQALesson2;
 
-import junit.framework.Assert;
+import org.testng.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -34,7 +34,7 @@ public class TitleVerificationTest {
             String titleText = title.getText();
 
             String errorMessage = format("Title page is incorrect. It doesn`t cointains <$s> search word", searchWord);
-            Assert.assertTrue(errorMessage, titleText.contains(searchWord));
+            Assert.assertTrue(titleText.contains(searchWord), errorMessage);
         } finally {
             driver.quit();
         }

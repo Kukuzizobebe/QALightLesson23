@@ -1,6 +1,6 @@
 package ua.QALightCourse.AQALesson2;
 
-import junit.framework.Assert;
+import org.testng.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -36,7 +36,7 @@ public class CategoryExistInProductCatalogVerificationTest {
                     .map(WebElement::getText)
                     .anyMatch(o -> o.contains(category));
 
-            Assert.assertTrue(errorMessage, isCategoryPresent);
+            Assert.assertTrue(isCategoryPresent, errorMessage);
 
         } finally {
             driver.quit();
