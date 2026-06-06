@@ -11,7 +11,7 @@ public class GetPetTest {
 
     @Test
     public void verifyPetEntityCanBeObtained() {
-        int petIdToGet = 150;
+        int petIdToGet = 151;
 
         Response response = given().get("https://petstore.swagger.io/v2/pet/" + petIdToGet);
 
